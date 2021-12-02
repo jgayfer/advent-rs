@@ -38,20 +38,11 @@ impl FromStr for Command {
     }
 }
 
+#[derive(Default)]
 struct Position {
     depth: i32,
     horizontal: i32,
     aim: i32,
-}
-
-impl Default for Position {
-    fn default() -> Position {
-        Position {
-            depth: 0,
-            horizontal: 0,
-            aim: 0,
-        }
-    }
 }
 
 impl Position {
