@@ -3,7 +3,7 @@ fn main() {
 
     parse_input()
         .into_iter()
-        .for_each(|timer| buckets[timer] = buckets.get(timer).unwrap() + 1);
+        .for_each(|timer| buckets[timer] += 1);
 
     println!("Part 1: {:?}", fish_count(buckets.clone(), 80));
     println!("Part 2: {:?}", fish_count(buckets.clone(), 256));
